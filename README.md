@@ -2,7 +2,7 @@
 
 # ionic5-shoppingApp
 
-## Application of the Koran by you
+ 
 
 
 ### got cmd  c:\
