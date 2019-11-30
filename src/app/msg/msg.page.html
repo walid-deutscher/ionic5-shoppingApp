@@ -1,0 +1,23 @@
+<ion-header>
+ 
+  
+  <ion-toolbar>
+       <ion-buttons slot="start">
+        <ion-back-button style="color:black"></ion-back-button>
+      </ion-buttons>
+    <ion-title style="color:black" >msg</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content text-center>
+
+
+<br>
+<ion-label> Votre Commentaire:</ion-label>
+<br>
+<textarea  [(ngModel)]="message.content"   maxlength="100"  rows="5"  type="text"></textarea>
+<br>
+<br>
+<button  class="login" expand="full" (click)="envoyer()" > Envoyer</button>
+<br>
+</ion-content>

@@ -1,0 +1,152 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+ 
+
+/* Font downloaded from FontsForWeb.com */
+
+ 
+textarea:focus, input:focus ,button:focus{
+    outline: none;
+}
+
+@font-face {
+    font-family: 'Abel';
+    src: url('/assets/fonts/Abel-Regular.eot');
+    src: url('/assets/fonts/Abel-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Abel-Regular.woff2') format('woff2'),
+        url('/assets/fonts/Abel-Regular.woff') format('woff');
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+
+    font-family: 'Abel';
+}
+
+ion-header  {
+ 
+  --ion-background-color: white;  /* fallback for old browsers */
+ 
+  
+}
+
+
+
+ion-button{
+--background:#2c3e50 ;
+color:white ;
+}
+
+input{
+   width: 80%;
+   
+   border-radius: 50pX;
+   background:#dddddd;
+   padding:10px;
+ border: none;
+border-style: none ;
+}
+.login{
+     width: 80%;
+
+    border-radius: 50pX;
+color:white;
+  background:#223b73;   
+    padding:20px;
+
+}
+
+
+.login1{
+    
+ background:#223b73;   
+ 
+   color:white;
+   padding:5px;
+
+
+}
+
+
+
+
+
+.csst {
+   
+   background:url("/assets/header.png")   no-repeat;
+   -webkit-background-size:  100% 100%;
+   -moz-background-size:  100%  100%;
+   -o-background-size : 100%  100%;
+   background-size: 100% 100%;
+  
+ 
+ }
+
+ 
+
+
+
+
+h3{
+    padding: 10px;
+   background: white;
+   border:1px solid #0575E6;
+ color: #0575E6 ;
+}
+
+textarea{
+   width: 80%;
+   
+   border-radius: 50pX;
+   background:#dddddd;
+   padding:10px;
+}
+  label {
+     
+
+color:white;
+padding: 20px;
+margin-top: 3px;
+}
+
+
+ion-button {
+   
+ --background: #F09819;  /* fallback for old browsers */
+--background: -webkit-linear-gradient(to right, #EDDE5D, #F09819);  /* Chrome 10-25, Safari 5.1-6 */
+--background: linear-gradient(to right, #EDDE5D, #F09819); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+ 
+
+ @import'~app/shared/myhead/css/all.css' ;
+
+ ion-content{
+  --background: #4267B2; 
+ }

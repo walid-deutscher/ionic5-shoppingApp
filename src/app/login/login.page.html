@@ -1,0 +1,41 @@
+<myhead></myhead>
+<ion-content     text-center>
+
+    <ion-segment>
+    <ion-segment-button  (click)="Login()">
+      <ion-label> login</ion-label>
+    </ion-segment-button>
+    <ion-segment-button   (click)="Singup()">
+      <ion-label>Inscription </ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+ 
+
+  <ion-icon  class="icon" name="person"></ion-icon>
+   
+  <br>
+  
+
+<input   placeholder="Email"  [(ngModel)]="user.email" type="text"  />
+
+<br>
+ 
+  
+<br>
+
+
+<input   placeholder="Mot de pass"  [(ngModel)]="user.password" type="password"  />
+<br><br>
+<button *ngIf="loginbtn" class="login" (click)="login()" > Connectez vous</button>
+<button  *ngIf="singupbtn"  class="login" (click)="inscri()" > Inscription</button>
+<br>
+ 
+<br>  
+ <input *ngIf="loginbtn"  placeholder="Email"  [(ngModel)]="email" type="text"  />
+ <br> <br>
+<button  *ngIf="loginbtn"  class="login" (click)="sendpass()" > Envoyer le mot de pass</button>
+<br>
+</ion-content>
+
+ 

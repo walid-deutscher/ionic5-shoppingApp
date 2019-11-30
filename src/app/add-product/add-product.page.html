@@ -1,0 +1,122 @@
+<myhead></myhead>
+
+
+<ion-content >
+
+
+  <ion-segment  >
+    <ion-segment-button  (click)="ShowAdd()">
+      <ion-label>Ajouter</ion-label>
+    </ion-segment-button>
+    <ion-segment-button   (click)="ShowList()">
+      <ion-label>mes Produis</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+
+
+
+   <div   *ngIf="showadd"  text-center >
+  
+
+   <ion-label> Titre de produit:</ion-label>
+   
+   <br>
+
+ <input  [(ngModel)]=" product.titre" type="text"  />
+
+<br>
+<ion-label> Description:</ion-label>
+<br>
+<textarea   [(ngModel)]="product.discription" maxlength="100"  rows="5"  type="text"></textarea>
+
+<br>
+<ion-label> Prix:</ion-label>
+<br>
+<input type="number"   [(ngModel)] =" product.prix"/>
+
+ 
+
+<br>
+<ion-label> Telefon:</ion-label>
+<br>
+
+<input  [(ngModel)] ="  product.phone"    type="number" />
+
+<br>
+<ion-label> Adresse:</ion-label>
+<br>
+<textarea  [(ngModel)]="product.Adresse"  maxlength="100"  rows="5" type="text"></textarea>
+<br>
+
+<ion-label> Categorie:</ion-label>
+<br>
+<select  [(ngModel)]="product.cat">
+  <option>  Ensembles</option>
+  <option> Chaussures</option>
+  <option>  Tricot </option>
+  <option>   veste </option>
+  <option>  autres</option>
+  <option>   pantalon</option>
+ 
+</select>
+<br>
+ 
+<br>
+ 
+
+Pour les images <br>
+ <input type="file"  class="inputfile"  id="file" (change)="upfile($event.target.files,1)" />
+
+    <label   for="file">
+     
+      <ion-icon name="images"></ion-icon>
+      image 1</label>
+  <br>
+ <hr>
+ <input type="file"  class="inputfile"   id="fil"(change)="upfile($event.target.files,2)" />
+
+     <label   for="fil">
+     
+      <ion-icon name="images"></ion-icon>
+                              image 2</label><hr>
+                               
+ <input type="file"  class="inputfile"  id="fi" (change)="upfile($event.target.files,3)" />
+    <label   for="fi">
+      <ion-icon name="images"></ion-icon>
+      image 3</label>
+
+ <hr>
+ <br>
+<div >
+  <img   *ngIf="product.urlimageone  "  height="60" width="60" [src]="product.urlimageone " />
+  <img  *ngIf="product.urlimagetwo "  height="60" width="60" [src]="product.urlimagetwo " />
+  <img  *ngIf="product.urlimagethree "  height="60" width="60" [src]="product.urlimagethree " />
+<hr>
+</div>
+<button  class="login" expand="full" (click)="res('walid')" > Ajouter</button>
+
+</div>
+
+
+ 
+  <div  *ngIf="showlist"  text-center >
+ 
+   <ion-item *ngFor="let product of prodcuts" >
+    <ion-thumbnail solt='start'>
+
+      <img *ngIf="product.urlimageone" [src]="product.urlimageone">
+
+    </ion-thumbnail>
+<ion-label>
+  <p>{{product.titre }}</p>
+</ion-label>
+ 
+     <button  class="login1"solt='end' (click) ="res(product.id)"> <ion-icon  style="font-size: 20px;"name="trash"></ion-icon> </button>
+   </ion-item>
+ 
+  </div> 
+<br>
+<br>
+ 
+</ion-content>

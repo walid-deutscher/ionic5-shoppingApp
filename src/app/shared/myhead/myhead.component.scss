@@ -1,0 +1,50 @@
+.content{
+    border-top-left-radius:20px;
+     border-top-right-radius:20px;
+     background:#4267B2 ;
+     border-bottom: 2px solid #4267B2;
+    
+ 
+   }
+   .header
+   {
+ background:white;  /* fallback for old browsers */
+ color:black;
+       
+   }
+i{
+  color:black;
+}
+   @import'~css/all.css' ;
+
+.not{
+
+  color:white;
+  background:red;
+  font-size: 15px;
+  border-radius:50%;
+ float: left;
+  height: 10px;
+  width:10px;
+ 
+}
+ 
+   .menul{
+
+    margin-top: 9px;
+     color:white;
+     font-size:25px;
+     margin-left: 10px; 
+     float: left;
+     
+   }
+  
+
+   .menun{
+    margin-top: 9px;
+    color:white;
+    font-size:25px;
+    margin-right: 10px; 
+    float: right;
+  }
+ 

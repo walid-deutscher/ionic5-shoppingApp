@@ -1,0 +1,77 @@
+ 
+ 
+
+
+
+
+ 
+ 
+ img {
+ height: 70px;
+  width: 65px;
+border-radius:50% 50%;
+ opacity:0.9;
+ padding: 2px;
+ border:2px double red ;
+ }
+
+
+p{
+
+ }
+
+.shoptitre{
+	 
+  margin-left:10px;
+ 
+background :white;
+color:gray;
+padding:5px;
+ 
+ 
+
+
+
+}
+ion-item{
+	
+
+	width:90%;
+	margin:auto;
+	margin-top:5px;
+	border-radius:5px;
+	 
+	//opacity: .0125;
+	color:black;
+ --background: 	WHITE;
+ 
+ --padding-bottom:5px;
+ --padding-top:5px;
+ --border-style:none;
+   
+ 
+}
+ 
+ion-button{
+	--background:white;
+}
+
+.price{
+
+width:50%;
+
+ padding:2px;
+ border-radius :10px;
+
+ 	color:black;
+ 
+background:#ebedf0 ;
+padding:5px;
+}
+
+
+ion-label{
+	
+
+	width:100%;
+}

@@ -1,0 +1,33 @@
+
+  
+<myhead></myhead>
+<ion-content  >
+  <div style=" background:#4267B2 ;">
+    <div style=" text-align: center; ">
+     
+    <ion-searchbar  (ionChange)="onSearchChange($event)"></ion-searchbar>
+ 
+
+      </div>
+      
+       
+
+
+ 
+  <ion-item  *ngFor=" let item of items " (click)="go(item)">
+     <img  *ngIf="item.urlimageone" class="dzimg"  [src]="item.urlimageone" alt="" />
+             <img  *ngIf="!item.urlimageone "  class="dzimg"  src="/assets/no.png" alt="" />
+           
+    <ion-label> <span class="shoptitre">{{item.titre}} </span><br>
+      <br>
+       
+               
+            </ion-label>
+          
+                <span slot="end">   <span    class="price" *ngIf="item.prix "    >{{item.prix}}   <strong>DA </strong> </span>
+            <span *ngIf="!item.prix "   >pas de prix</span></span>
+
+  </ion-item>
+ 
+</div>
+</ion-content>

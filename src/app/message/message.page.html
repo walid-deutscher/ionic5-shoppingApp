@@ -1,0 +1,28 @@
+<ion-header>
+ 
+  
+  <ion-toolbar>
+       <ion-buttons slot="start">
+        <ion-back-button style="color:black"></ion-back-button>
+      </ion-buttons>
+    <ion-title style="color:black" >Mes messages recu</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+   
+ <ion-content>
+
+ 
+
+    <h2 text-center>Commentaire reçu </h2>
+    
+    <div (click)=show(item.content)   *ngFor=" let item of messages "  class="container">
+       <ion-label >  {{item.content.substring(2, 30)}}  </ion-label>
+      
+      <span class="time-right">   <span class="par">  {{item.titre}} </span> </span>
+    </div>
+    
+
+
+    </ion-content>
+ 

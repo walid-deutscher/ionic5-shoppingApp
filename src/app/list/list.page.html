@@ -1,0 +1,116 @@
+<myhead></myhead>
+ 
+
+<ion-content   >
+
+  <div style=" text-align: center;  background: 	white; border:5px solid black ; width:90%; margin:auto;">
+
+    <span (click)="sendMsg()" class="msg" >
+      
+        <i class="far fa-envelope"></i>
+  </span>
+  
+
+  <br>
+  <br>
+ 
+
+  <ion-slides    text-center     >
+    <ion-slide>
+      <img  style="height: 200pX; width: 200px; "[src]="thiss.urlimageone">
+
+    </ion-slide>
+    <ion-slide>
+      <img style="height: 200pX; width: 200px; " [src]="thiss.urlimagetwo">
+
+    </ion-slide>
+    <ion-slide>
+      <img  style="height: 200pX; width: 200px; "[src]="thiss.urlimagethree">
+    </ion-slide>
+  </ion-slides>
+
+  <br>
+ 
+<br>
+
+<p  class="title">{{thiss.titre}}</p>
+<ion-item  >
+    <span class="tm">
+        <i class="far fa-clock"></i>
+    
+    </span>  
+    <ion-label   style="color:black " >
+        {{thiss.datt}} 
+    </ion-label>
+  </ion-item>
+
+  <ion-item  >
+      <span class="tmm">
+          <i class="fas fa-info-circle"></i>
+      
+      </span>  
+      
+         <span style="color:black;">
+ {{thiss.discription}}   
+</span>
+     
+    </ion-item>
+
+    
+  <ion-item >
+      <span class="tp">
+          <i class="fas fa-dollar-sign"></i>
+      
+      
+      </span>  
+      <ion-label   style="color:black " >
+         
+ {{thiss.prix}}   
+     
+      </ion-label>
+    </ion-item>
+
+       
+  <ion-item  >
+   
+<span class="tf">
+
+    
+    <i class="fas fa-phone-volume"></i>
+
+
+</span> 
+      <ion-label   style="color:black "  >
+         
+ {{thiss.phone}}   
+     
+      </ion-label>
+    </ion-item>
+
+
+
+    <ion-item  >
+   
+        <span class="ta">
+            <i class="fas fa-map-marker-alt"></i>
+        
+        
+        
+        </span>
+              <span   style="color:black "  >
+                 
+         {{thiss.Adresse}}   
+             
+              </span>
+            </ion-item>
+
+
+
+
+ 
+  
+ <br>
+   
+</div>
+  
+</ion-content>

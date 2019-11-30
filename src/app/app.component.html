@@ -1,0 +1,55 @@
+
+ 
+
+
+<ion-app (ionWillOpen)="menuOpened()">
+ 
+
+    <ion-menu  type="overlay">
+      <div class="hd">
+   <div text-center  class="stl">
+    
+    <i class="fas fa-shipping-fast"></i>
+    <br>
+   </div>
+  </div>
+      <ion-content>
+      
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon  slot="start" [name]="p.icon"></ion-icon>
+              <ion-label style="color:black; "  >
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        
+          <ion-item *ngIf="logoutitem==true" (click)="Logout()">
+            <ion-icon  slot="start" name="close"></ion-icon>
+            <ion-label   style="color:black;"   >
+            déconnecter
+            </ion-label>
+          </ion-item>
+
+        
+        
+          <ion-item  (click)="share()">
+            <ion-icon   slot="start" name="share"></ion-icon>
+            <ion-label style="color:black; " >
+              Share
+            </ion-label>
+          </ion-item>
+
+          <ion-item  (click)="ok()">
+            <ion-icon  slot="start" name="power"></ion-icon>
+            <ion-label   style="color:black;"   >
+             Close
+            </ion-label>
+          </ion-item>
+
+       
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+ 
+</ion-app>
