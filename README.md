@@ -104,16 +104,18 @@ shop/{id}{
 
 
 
-![ionic5-shoppingApp](https://raw.githubusercontent.com/walid-deutscher/ionic5-shoppingApp/master/images/1%20(2).png)
-![ionic5-shoppingApp](https://raw.githubusercontent.com/walid-deutscher/ionic5-shoppingApp/master/images/1%20(3).png)
-![ionic5-shoppingApp](https://raw.githubusercontent.com/walid-deutscher/ionic5-shoppingApp/master/images/1%20(4).png)
-![ionic5-shoppingApp](https://raw.githubusercontent.com/walid-deutscher/ionic5-shoppingApp/master/images/1%20(5).png)
-![ionic5-shoppingApp](https://raw.githubusercontent.com/walid-deutscher/ionic5-shoppingApp/master/images/1%20(1).png)
-![ionic5-shoppingApp]()
+ 
+ 
+<img src='https://raw.githubusercontent.com/walid-deutscher/ionic5-shoppingApp/master/images/1%20(1).png' width='200px' height='350px'>
+<img src='https://raw.githubusercontent.com/walid-deutscher/ionic5-shoppingApp/master/images/1%20(4).png' width='200px' height='350px'>
+
+<img src='https://raw.githubusercontent.com/walid-deutscher/ionic5-shoppingApp/master/images/1%20(5).png' width='200px' height='350px'>
 
 
+<img src='https://raw.githubusercontent.com/walid-deutscher/ionic5-shoppingApp/master/images/1%20(2).png' width='200px' height='350px'>
 
 
+<img src='https://raw.githubusercontent.com/walid-deutscher/ionic5-shoppingApp/master/images/1%20(3).png' width='200px' height='350px'>
 
 
 
